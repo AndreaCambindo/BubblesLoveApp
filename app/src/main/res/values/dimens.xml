@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="Big_margin">75dp</dimen>
+    <dimen name="Logo_size">130dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="small_margin">20dp</dimen>
+    <dimen name="corner_size">14dp</dimen>
+    <dimen name="text_button_size">12sp</dimen>
+</resources>

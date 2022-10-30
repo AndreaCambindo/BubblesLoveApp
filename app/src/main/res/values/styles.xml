@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Widget.Theme.BubblesLoveApp.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/rojo</item>
+    </style>
+
+    <style name="Widget.Theme.BubblesLoveApp.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/rojo</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+</resources>

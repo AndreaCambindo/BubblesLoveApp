@@ -1,0 +1,74 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BubblesLoveApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/rojo</item>
+        <item name="colorPrimaryVariant">@color/rosado</item>
+        <item name="colorOnPrimary">@color/blanco</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blanco</item>
+        <item name="colorSecondaryVariant">@color/blanco</item>
+        <item name="colorOnSecondary">@color/negro</item>
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/on_error</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Bubble.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Bubble.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Bubble.Large</item>
+        <item name="textAppearanceButton">@style/Theme.Bubbles.TextAppearanceButton</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.BubblesLoveApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.BubblesLoveApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.BubblesLoveApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ShapeAppearance.Bubble.Small" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">@dimen/corner_size</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="ShapeAppearance.Bubble.Medium" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">@dimen/corner_size</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="ShapeAppearance.Bubble.Large" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerSize">@dimen/corner_size</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="Theme.Bubbles.TextAppearanceButton" parent="Widget.MaterialComponents.Button">
+        <item name="fontFamily">@font/fuzzbold</item>
+        <item name="android:textSize">@dimen/text_button_size</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="Theme.Bubbles.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/fuzzreg</item>
+        <item name="android:textSize">@dimen/text_button_size</item>
+    </style>
+
+
+
+
+
+    <style name="Theme.BubblesLoveApp.Fullscreen" parent="Theme.BubblesLoveApp">
+        <item name="android:actionBarStyle">
+            @style/Widget.Theme.BubblesLoveApp.ActionBar.Fullscreen
+        </item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.BubblesLoveApp.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/rojo</item>
+        <item name="fullscreenTextColor">@color/rojo</item>
+    </style>
+</resources>
