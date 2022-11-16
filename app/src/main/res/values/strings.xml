@@ -27,4 +27,12 @@
     <string name="masculino_label">Masculino</string>
     <string name="femenino_label">Femenino</string>
     <string name="otro_label">Otro</string>
+    <string name="home_label">Inicio</string>
+    <string name="localizacion_label">Lugares Top</string>
+    <string name="burbujas_label">Categorías</string>
+    <string name="corazon_label">Citas</string>
+    <string name="home_title">¡ADIÓS MONOTONÍA!</string>
+    <string name="home_subtittle">Mejora tu relación de pareja con diferentes citas</string>
+    <string name="cita_tittle">¡Todas las citas!</string>
+    <string name="cita_subtittle">Aquí estan todas las citas para elegir la que más llame su atención.</string>
 </resources>

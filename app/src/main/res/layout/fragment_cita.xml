@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.CitaFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/cita_fragment_banner"
+        android:layout_width="0dp"
+        android:layout_height="210dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/romantica"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cita_fragment_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cita_fragment_banner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/default_margin"
+        android:textAppearance="@style/Theme.Bubbles.Headline5"
+        tools:text="Citas Románticas"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cita_fragment_subtittle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cita_fragment_tittle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="@dimen/Big_margin"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAppearance="@style/Theme.Bubbles.Body1"
+        android:textSize="15sp"
+        tools:text="citas para no parar de suspirar de amor"/>
+
+    <FrameLayout
+        android:id="@+id/cita_fragment_recycler_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cita_fragment_subtittle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="12dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cita_fragment_recycler_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encontrarás 10 citas románticas"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textAppearance="@style/Theme.Bubbles.Headline4"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cita_fragment_recycler_search_layout"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_height="45dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/cita_fragment_recycler_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_fragment_recycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/cita_fragment_recycler_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/small_margin"
+        tools:listitem="@layout/item_cita"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/item_service_icon"
+        app:layout_constraintTop_toTopOf="@id/item_service_title"
+        app:layout_constraintBottom_toBottomOf="@id/item_service_descripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginVertical="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_width="@dimen/icon_service"
+        android:layout_height="@dimen/icon_service"
+        tools:srcCompat="@drawable/corazon"/>
+    
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/item_service_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/item_service_icon"
+        android:layout_marginStart="@dimen/default_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/default_margin"
+        tools:text="Románticas"
+        android:textAppearance="@style/Theme.Bubbles.Headline4"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/item_service_descripcion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/item_service_icon"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/item_service_title"
+        android:layout_marginTop="5dp"
+        tools:text="citas para no parar de suspirar de amor"
+        android:textAppearance="@style/Theme.Bubbles.Body1"/>
+    
+    <com.google.android.material.divider.MaterialDivider
+        app:layout_constraintTop_toBottomOf="@id/item_service_descripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_width="0dp"
+        app:dividerColor="@color/rosado"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,6 +17,7 @@
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Bubble.Medium</item>
         <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Bubble.Large</item>
         <item name="textAppearanceButton">@style/Theme.Bubbles.TextAppearanceButton</item>
+        <item name="colorControlNormal">@color/blanco</item>
         <!-- Customize your theme here. -->
     </style>
 
@@ -44,6 +45,11 @@
         <item name="cornerFamily">rounded</item>
     </style>
 
+    <style name="cutImage" parent="">
+        <item name="cornerSize">50%</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
     <style name="Theme.Bubbles.TextAppearanceButton" parent="Widget.MaterialComponents.Button">
         <item name="fontFamily">@font/fuzzbold</item>
         <item name="android:textSize">@dimen/text_button_size</item>
@@ -55,8 +61,26 @@
         <item name="android:textSize">@dimen/text_button_size</item>
     </style>
 
+    <style name="Theme.Bubbles.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/fuzzbold</item>
+        <item name="android:textColor">@color/rojo</item>
+        <item name="android:textSize">25dp</item>
+        <item name="fontWeight">700</item>
+    </style>
 
+    <style name="Theme.Bubbles.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/fuzzbold</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textSize">22dp</item>
+        <item name="fontWeight">7000</item>
+    </style>
 
+    <style name="Theme.Bubbles.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/fuzzbold</item>
+        <item name="android:textColor">@color/rojo</item>
+        <item name="android:textSize">15dp</item>
+        <item name="fontWeight">7000</item>
+    </style>
 
 
     <style name="Theme.BubblesLoveApp.Fullscreen" parent="Theme.BubblesLoveApp">

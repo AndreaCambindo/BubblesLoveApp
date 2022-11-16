@@ -5,4 +5,8 @@
     <dimen name="small_margin">20dp</dimen>
     <dimen name="corner_size">14dp</dimen>
     <dimen name="text_button_size">12sp</dimen>
+    <dimen name="toolbar_icon_size">120dp</dimen>
+    <dimen name="toolbar_icon_size_height">48dp</dimen>
+    <dimen name="icon_service">64dp</dimen>
+    <dimen name="stroke_size">2dp</dimen>
 </resources>
